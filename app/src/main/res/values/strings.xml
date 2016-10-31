@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">BoaViagem</string>
+
+    <!-- Strings da tela de login -->
+    <string name="usuario">Usuário:</string>
+    <string name="senha">Senha:</string>
+    <string name="entrar">Entrar</string>
+
+    <!-- Strings da autentificacao de login -->
+    <string name="erro_autenticacao">Erro na autentificação</string>
+
+    <!-- Strings da tela dashboard -->
+    <string name="novo_gasto">Novo Gasto</string>
+    <string name="novo_gasto_text">Está pronto para um novo gasto?
+    clique aqui, faça já as contas e evite surpresas!"</string>
+
+    <string name="nova_viagem">Nova Viagem</string>
+    <string name="nova_viagem_text">Cansado de sua vida? Aproveite nosso APP
+        e planeje agora sua nova viagem!"</string>
+
+    <string name="minhas_viagens">Minhas Viagens</string>
+    <string name="minhas_viagens_text">Não se lembra do quanto gastou na ultima viagem?
+        Clique aqui e relembre cada gasto efetuado!"</string>
+
+    <string name="configuracoes">Configurações</string>
+    <string name="config_text">Entre aqui para personalizar seu aplicativo.
+        Deixe ele como melhor quiser!</string>
+</resources>

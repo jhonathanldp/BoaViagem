@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Material.Light.NoActionBar">
+        <!-- cor da barra de status -->
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <!-- cor da barra de notificação -->
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!-- tema de controle de UI como checkbox ou textfields -->
+        <item name="android:colorAccent">@color/colorAccent</item>
+
+    </style>
+    <style name="AppThemeSemTitulo" parent="android:Theme.Material.Wallpaper.NoTitleBar">
+
+    </style>
+
+</resources>
