@@ -5,4 +5,10 @@
     <color name="colorAccent">#5fd4af</color>
     <color name="colorLight">#FFFFF0</color>
     <color name="colorTextColors">#212121</color>
+
+    <color name="titulo">#F57C00</color>
+    <color name="categoria_alimentacao">#9FC5F8</color>
+    <color name="categoria_hospedagem">#6FA8DC</color>
+    <color name="categoria_transporte">#0099CC</color>
+    <color name="categoria_outros">#ACBFD5</color>
 </resources>

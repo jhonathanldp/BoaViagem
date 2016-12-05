@@ -9,6 +9,62 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="3dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="false">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imagemnovaviagem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/novo_gasto"
+                    android:src="@drawable/tabletcharts" />
+
+                <TextView
+                    android:id="@+id/nova_viagem_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imagemnovaviagem"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="16dp"
+                    android:paddingTop="24dp"
+                    android:text="@string/nova_viagem_text"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/nova_viagem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@id/nova_viagem_text"
+                    android:layout_marginBottom="0dp"
+                    android:background="@color/colorAccent"
+                    android:onClick="selecionarOpcao"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="0dp"
+                    android:text="@string/nova_viagem"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorTextColors" />
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
@@ -34,7 +90,7 @@
                     android:src="@drawable/dollarbills" />
 
                 <TextView
-                    android:id="@+id/novo_gasto"
+                    android:id="@+id/novo_gasto_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/imagemnovogasto"
@@ -47,71 +103,17 @@
                     android:textStyle="bold" />
 
                 <Button
+                    android:id="@+id/novo_gasto"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
-                    android:layout_below="@id/novo_gasto"
+                    android:layout_below="@id/novo_gasto_text"
                     android:layout_marginBottom="0dp"
                     android:background="@color/colorAccent"
                     android:onClick="selecionarOpcao"
                     android:paddingEnd="16dp"
                     android:paddingStart="0dp"
                     android:text="@string/novo_gasto"
-                    android:textAlignment="center"
-                    android:textColor="@color/colorTextColors" />
-
-            </RelativeLayout>
-
-
-        </android.support.v7.widget.CardView>
-
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginTop="4dp"
-            app:cardCornerRadius="3dp"
-            app:cardElevation="3dp"
-            app:cardPreventCornerOverlap="true"
-            app:cardUseCompatPadding="false">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:id="@+id/imagemnovaviagem"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@string/novo_gasto"
-                    android:src="@drawable/tabletcharts" />
-
-                <TextView
-                    android:id="@+id/nova_viagem"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/imagemnovaviagem"
-                    android:paddingEnd="0dp"
-                    android:paddingStart="16dp"
-                    android:paddingTop="24dp"
-                    android:text="@string/nova_viagem_text"
-                    android:textColor="@color/colorPrimaryDark"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_below="@id/nova_viagem"
-                    android:layout_marginBottom="0dp"
-                    android:background="@color/colorAccent"
-                    android:onClick="selecionarOpcao"
-                    android:paddingEnd="16dp"
-                    android:paddingStart="0dp"
-                    android:text="@string/nova_viagem"
                     android:textAlignment="center"
                     android:textColor="@color/colorTextColors" />
 
@@ -144,7 +146,7 @@
                     android:src="@drawable/bank" />
 
                 <TextView
-                    android:id="@+id/minhas_viagens"
+                    android:id="@+id/minhas_viagens_textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/imagemminhasviagens"
@@ -157,10 +159,11 @@
                     android:textStyle="bold" />
 
                 <Button
+                    android:id="@+id/minhas_viagens"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
-                    android:layout_below="@id/minhas_viagens"
+                    android:layout_below="@id/minhas_viagens_textView"
                     android:layout_marginBottom="0dp"
                     android:background="@color/colorAccent"
                     android:onClick="selecionarOpcao"

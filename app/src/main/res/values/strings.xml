@@ -5,6 +5,7 @@
     <string name="usuario">Usuário:</string>
     <string name="senha">Senha:</string>
     <string name="entrar">Entrar</string>
+    <string name="logo_de_login">Logo de Login</string>
 
     <!-- Strings da autentificacao de login -->
     <string name="erro_autenticacao">Erro na autentificação</string>
@@ -25,4 +26,37 @@
     <string name="configuracoes">Configurações</string>
     <string name="config_text">Entre aqui para personalizar seu aplicativo.
         Deixe ele como melhor quiser!</string>
+
+    <!-- Strings da tela novaviagem -->
+    <string name="destino">Destino: </string>
+    <string name="tipo_da_viagem">Tipo de Viagem</string>
+    <string name="lazer">Lazer</string>
+    <string name="negocios">Negócios</string>
+    <string name="data_da_chegada">Data da Chegada</string>
+    <string name="data_da_saida">Data da Saida</string>
+    <string name="selecione">Selecione</string>
+    <string name="orcamento">Orçamento</string>
+    <string name="quantidade_de_pessoas">Quantidade de Pessoas:</string>
+    <string name="salvar">Salvar</string>
+
+    <!-- Strings da tela Novo Gasto -->
+    <string name="data">Data</string>
+    <string name="valor">Valor</string>
+    <string name="descricacao">Descrição</string>
+    <string name="local">Local</string>
+    <string name="gastei">Gastei tudo isso ai!</string>
+    <string name="categoria">Categoria</string>
+
+    <string-array name="categoria_gasto">
+        <item>Alimentação</item>
+        <item>Combustivel</item>
+        <item>Transporte</item>
+        <item>Hospedagem</item>
+        <item>Outros</item>
+    </string-array>
+
+    <!-- Textos dos menus -->
+    <string name="sair">Sair</string>
+    <string name="remover">Remover</string>
+
 </resources>

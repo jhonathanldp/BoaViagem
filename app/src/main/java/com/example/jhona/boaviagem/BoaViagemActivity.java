@@ -1,9 +1,14 @@
 package com.example.jhona.boaviagem;
 
 import android.app.Activity;
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
+import android.transition.Explode;
+import android.transition.Fade;
+import android.transition.Slide;
 import android.view.View;
+import android.view.Window;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -17,8 +22,9 @@ public class BoaViagemActivity extends Activity {
     private EditText senha;
 
     @Override
-    public void onCreate(Bundle savedInstanceState){
+    protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
+        getWindow().requestFeature(Window.FEATURE_ACTIVITY_TRANSITIONS);
         setContentView(R.layout.login);
 
         usuario = (EditText) findViewById(R.id.usuario);
@@ -26,11 +32,12 @@ public class BoaViagemActivity extends Activity {
     }
 
     public void entrarOnClick(View v){
+        getWindow().setExitTransition(new Explode());
         String usuarioInformado = usuario.getText().toString();
         String senhaInformada = senha.getText().toString();
 
         if("Jhonathan".equals(usuarioInformado) && "123".equals(senhaInformada)){
-            startActivity(new Intent(this, DashboardActivity.class));
+            startActivity(new Intent(this, DashboardActivity.class), ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
 
         }
         else {
